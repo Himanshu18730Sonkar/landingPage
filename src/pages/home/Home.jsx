@@ -2,11 +2,11 @@ import React, { Suspense, lazy } from 'react'
 import Navbar from '../../components/layout/navbar/Navbar'
 import Hero from './components/hero/Hero'
 const Footer = lazy(() => import('../../components/layout/footer/Footer'))
-const Category = lazy(() => import('./components/category/category'))
+const Category = lazy(() => import('./components/category/Category'))
 const Destination = lazy(() => import('./components/destination/Destination'))
 const EasyFast = lazy(() => import('./components/esay&fast/EasyFast'))
 const Testimonials = lazy(() => import('./components/testimonials/Testmonials'))
-const Brand = lazy(() => import('./components/brand/brand'))
+const Brand = lazy(() => import('./components/brand/Brand'))
 const Newsletter = lazy(() => import('./components/newsletter/Newsletter'))
 
 const Placeholder = ({height='200px'}) => <div style={{minHeight: height}} aria-hidden></div>
