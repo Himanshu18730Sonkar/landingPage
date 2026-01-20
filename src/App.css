@@ -1,0 +1,21 @@
+/* Marquee animation for brand logos */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+  will-change: transform;
+}
+
+/* Testimonial card smoothing */
+.testimonial-card {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  will-change: transform, opacity;
+}
+
+/* Utility for reducing motion if user prefers */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee { animation: none; }
+  .testimonial-card { transition: none; }
+}

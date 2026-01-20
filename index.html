@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/arrow.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Load Google Fonts non-blocking: preload stylesheet and swap onload -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" as="style" onload="this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"></noscript>
+
+    <!-- Preload LCP hero image (AVIF preferred, responsive) -->
+    <link rel="preload" as="image" imagesrcset="/src/assets/responsive/traveller-w1200.avif 1200w, /src/assets/responsive/traveller-w800.avif 800w, /src/assets/responsive/traveller-w400.avif 400w" imagesizes="(max-width: 768px) 80vw, 700px">
+    <meta name="description" content="Joddo — Best travel destinations, hotels, and flights. Find and book your next trip with ease." />
+    <title>joddo</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@theme {
+  --breakpoint-sm: 37.5rem;
+  --breakpoint-md: 54.25rem;
+  --breakpoint-lg: 70.25rem;
+  --breakpoint-xl:96.25rem;
+  --color-primary: oklch(27.9% 0.041 260.031);
+  --color-secondary:oklch(44.6% 0.043 257.281);
+
+}
+
+:root{
+  --fontVolkhov: 'Volkhov', serif;
+  --fontPlayfair: 'Playfair', serif;
+}
+html body{
+  font-family: "Poppins", sans-serif;
+}
+/* Utility to apply Volkhov font to elements */
+.font-volkhov {
+  font-family: var(--fontVolkhov);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
